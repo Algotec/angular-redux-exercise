@@ -1,15 +1,12 @@
-import {bootstrap} from '@angular/platform-browser-dynamic';
-import {enableProdMode} from '@angular/core';
-import {JSONP_PROVIDERS} from '@angular/http';
-import {TickerApp, environment} from './app';
-import {provideStore} from '@ngrx/store';
-import {tickerReducer} from './app/shared/ticker.reducer';
+import './polyfills.ts';
+
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { enableProdMode } from '@angular/core';
+import { environment } from './environments/environment';
+import { AppModule } from './app/app.module';
 
 if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(TickerApp, [
-  provideStore({counter: tickerReducer}),
-  ...JSONP_PROVIDERS]);
-
+platformBrowserDynamic().bootstrapModule(AppModule);

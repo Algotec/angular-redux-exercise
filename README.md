@@ -1,4 +1,4 @@
-# angular2-day4-exercise
+# angular2-redux-exercise
 
 ## Goal
 
@@ -17,9 +17,14 @@ a third component that shows the number of watched stocks in addition to the num
 
 ## Tools
 
-This repo is built with angular-cli you can use it to generate more components.
+This repo is built with angular-cli  ([angular/angular-cli](https://github.com/angular/angular-cli))
 You should write your app using one way data flow by using actions and reducers, taking care to use immutability where appropriate. 
-the bootstrap providers of the app include ngrx/store so you can inject Store to [get hold of your state using observables api](https://github.com/ngrx/store)
+
+The app providers include ngrx/store so you can inject Store service to [get hold of your state using observables api](https://github.com/ngrx/store)
 the skeleton for the reducer is in shared/ticker.reducer.ts - write your own action and switch cases to handle them.
 
-the app index.html includes a link to bootstrap 3.6 css so feel free to use thier classes to make is look reasonably nice, but don't spend too much time on that!.
+the app index.html includes a link to bootstrap 3.6 css so feel free to use their classes to make is look reasonably nice, but don't spend too much time on that!.
+
+## solution
+
+Is found in the solution branch (but don't cheat!)

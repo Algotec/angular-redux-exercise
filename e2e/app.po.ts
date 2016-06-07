@@ -1,9 +1,11 @@
-export class Angular2Day4ExercisePage {
+import { browser, element, by } from 'protractor';
+
+export class TempPage {
   navigateTo() {
     return browser.get('/');
   }
 
   getParagraphText() {
-    return element(by.css('angular2-day4-exercise-app h1')).getText();
+    return element(by.css('app-root h1')).getText();
   }
 }

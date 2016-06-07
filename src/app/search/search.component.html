@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="form-group">
+    <label class="control-label">Search for stocks
+      <input ngModel="" name="search" #searchInput="ngModel" class="control" type="text"/>
+    </label>
+  </div>
+</div>
+<search-results (addToWatch)=addToWatch($event) (removeFromWatch)="removeFromWatch($event)" [searchResults]="results$|async" [watchList]="watchList$|async"></search-results>

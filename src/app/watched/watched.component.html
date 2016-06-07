@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="watchList" *ngIf="hasData$ |async">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-2">Symbol</div>
+    <div class="col-xs-3">Name</div>
+    <div class="col-xs-3">Price</div>
+    <div class="col-xs-3">Change</div>
+    <stock-item [interval]="interval$ | async" *ngFor="let item of watchList$ | async" [item]="item"></stock-item>
+  </div>
+</div>
